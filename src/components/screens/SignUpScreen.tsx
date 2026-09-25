@@ -11,7 +11,7 @@ export const SignUpScreen: React.FC<SignUpScreenProps> = ({
   onNavigate,
   onSignUpComplete
 }) => {
-  const [name, setName] = useState('Maya Chen');
+  const [name, setName] = useState('User');
   const [email, setEmail] = useState('maya.chen@community.org');
   const [password, setPassword] = useState('sw-pass-1234');
   const [showPassword, setShowPassword] = useState(false);
@@ -24,7 +24,7 @@ export const SignUpScreen: React.FC<SignUpScreenProps> = ({
   };
 
   const handleGoogleAuth = () => {
-    onSignUpComplete({ name: 'Maya Chen', email: 'maya.chen@gmail.com' });
+    onSignUpComplete({ name: 'User', email: 'user@example.com' });
     onNavigate('profile_setup');
   };
 
@@ -99,7 +99,7 @@ export const SignUpScreen: React.FC<SignUpScreenProps> = ({
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="e.g. Maya Chen"
+                placeholder="e.g. User"
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-stone-300 bg-white text-xs text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-700"
               />
             </div>

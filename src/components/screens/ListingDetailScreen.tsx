@@ -39,8 +39,8 @@ export const ListingDetailScreen: React.FC<ListingDetailScreenProps> = ({
   const [requestedSuccess, setRequestedSuccess] = useState(false);
   const poster = OTHER_USERS[listing.userId] || {
     id: listing.userId,
-    name: 'Carlos Mendez',
-    handle: '@carlos_woodcraft',
+    name: 'User',
+    handle: '@user',
     avatarUrl: listing.imageUrl,
     location: `${listing.locationArea} · ${formatDistanceKm(listing.distanceMiles)} away`,
     distanceMiles: listing.distanceMiles,
@@ -134,11 +134,17 @@ export const ListingDetailScreen: React.FC<ListingDetailScreenProps> = ({
           <div className="flex items-center gap-3">
             {/* Avatar with subtle border & shadow to look explicitly tappable */}
             <div className="relative rounded-full ring-2 ring-emerald-700/60 shadow-xs group-hover:scale-105 transition-transform">
-              <img
-                src={poster.avatarUrl}
-                alt={poster.name}
-                className="w-12 h-12 rounded-full object-cover"
-              />
+              {poster.avatarUrl ? (
+                <img
+                  src={poster.avatarUrl}
+                  alt={poster.name}
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+              ) : (
+                <div className="w-12 h-12 rounded-full bg-stone-200 flex items-center justify-center text-sm font-bold text-stone-500">
+                  U
+                </div>
+              )}
               <span className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px] font-bold ring-2 ring-white">
                 ✓
               </span>

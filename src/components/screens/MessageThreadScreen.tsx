@@ -74,11 +74,9 @@ export const MessageThreadScreen: React.FC<MessageThreadScreenProps> = ({
             >
               {/* Tappable Avatar with ring */}
               <div className="relative rounded-full ring-2 ring-emerald-700/60 shadow-xs">
-                <img
-                  src={thread.otherUser.avatarUrl}
-                  alt={thread.otherUser.name}
-                  className="w-9 h-9 rounded-full object-cover"
-                />
+                <div className="w-9 h-9 rounded-full bg-stone-200 flex items-center justify-center text-xs font-bold text-stone-500">
+                  U
+                </div>
                 <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-500 ring-1 ring-white" />
               </div>
               <div>
@@ -145,11 +143,9 @@ export const MessageThreadScreen: React.FC<MessageThreadScreenProps> = ({
             >
               <div className="flex items-center justify-between mb-1.5">
                 <div className="flex items-center gap-2">
-                  <img
-                    src={th.otherUser.avatarUrl}
-                    alt={th.otherUser.name}
-                    className="w-8 h-8 rounded-full object-cover ring-1 ring-stone-200"
-                  />
+                  <div className="w-8 h-8 rounded-full bg-stone-200 flex items-center justify-center text-[10px] font-bold text-stone-500 ring-1 ring-stone-200">
+                    U
+                  </div>
                   <div>
                     <span className="font-bold text-xs text-stone-900">{th.otherUser.name}</span>
                     <span className="text-[10px] text-stone-500 block leading-tight">
@@ -287,11 +283,9 @@ export const MessageThreadScreen: React.FC<MessageThreadScreenProps> = ({
                   className={`flex items-end gap-2 ${isMine ? 'justify-end' : 'justify-start'}`}
                 >
                   {!isMine && (
-                    <img
-                      src={thread.otherUser.avatarUrl}
-                      alt={thread.otherUser.name}
-                      className="w-6 h-6 rounded-full object-cover ring-1 ring-stone-300 shrink-0"
-                    />
+                    <div className="w-6 h-6 rounded-full bg-stone-200 flex items-center justify-center text-[9px] font-bold text-stone-500 ring-1 ring-stone-300 shrink-0">
+                      U
+                    </div>
                   )}
                   <div
                     className={`max-w-[78%] p-3 rounded-2xl text-xs leading-relaxed shadow-xs ${

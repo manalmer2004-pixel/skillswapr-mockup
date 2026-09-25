@@ -277,11 +277,9 @@ export const ProfileScreen: React.FC<ProfileScreenProps> = ({
             >
               <div className="flex items-center justify-between mb-1.5">
                 <div className="flex items-center gap-2">
-                  <img
-                    src={rev.reviewerAvatar}
-                    alt={rev.reviewerName}
-                    className="w-6 h-6 rounded-full object-cover ring-1 ring-stone-200"
-                  />
+                  <div className="w-6 h-6 rounded-full bg-stone-200 flex items-center justify-center text-[9px] font-bold text-stone-500 ring-1 ring-stone-200">
+                    U
+                  </div>
                   <span className="font-bold text-xs text-stone-900">{rev.reviewerName}</span>
                 </div>
                 <span className="text-[10px] text-stone-400">{rev.date}</span>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Camera, MapPin, Check, Plus, Sparkles, ArrowRight } from 'lucide-react';
 import { ScreenId, SkillCategory } from '../../types';
-import avatarMakerImg from '../../assets/images/avatar_community_maker_1790249223451.jpg';
 import { LocationPermissionDialog } from '../common/LocationPermissionDialog';
 
 interface ProfileSetupScreenProps {
@@ -18,8 +17,8 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
   onNavigate,
   onFinishSetup
 }) => {
-  const [photoSelected, setPhotoSelected] = useState<string>(avatarMakerImg);
-  const [name, setName] = useState('Maya Chen');
+  const [photoSelected] = useState<string>('');
+  const [name, setName] = useState('User');
   const [location, setLocation] = useState('Mission District, San Francisco');
   const [showLocationDialog, setShowLocationDialog] = useState(false);
   const [firstSkill, setFirstSkill] = useState('Basic First Aid Training');
@@ -86,11 +85,17 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
             {/* Avatar Uploader Simulator */}
             <div className="flex flex-col items-center justify-center my-4">
               <div className="relative">
-                <img
-                  src={photoSelected}
-                  alt="Profile"
-                  className="w-24 h-24 rounded-full object-cover ring-4 ring-emerald-100 shadow-md"
-                />
+                {photoSelected ? (
+                    <img
+                      src={photoSelected}
+                      alt="Profile"
+                      className="w-24 h-24 rounded-full object-cover ring-4 ring-emerald-100 shadow-md"
+                    />
+                  ) : (
+                    <div className="w-24 h-24 rounded-full bg-stone-200 ring-4 ring-emerald-100 shadow-md flex items-center justify-center text-3xl font-black text-stone-500">
+                      U
+                    </div>
+                )}
                 <button
                   type="button"
                   onClick={() => alert('Photo gallery selector simulation')}

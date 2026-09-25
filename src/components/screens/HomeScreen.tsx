@@ -290,15 +290,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
                     </div>
                     <div>
                       <span className="text-xs font-semibold text-stone-800 group-hover/user:text-emerald-900 transition-colors block leading-tight">
-                        {listing.userId === 'user_carlos'
-                          ? 'Carlos Mendez'
-                          : listing.userId === 'user_elena'
-                          ? 'Elena Rostova'
-                          : listing.userId === 'user_david'
-                          ? 'David Kim'
-                          : listing.userId === 'user_priya'
-                          ? 'Priya Sharma'
-                          : 'Community Neighbor'}
+                        User
                       </span>
                       <div className="flex items-center gap-1 text-[10px] text-stone-500">
                         <Star className="w-3 h-3 fill-amber-400 text-amber-500" />

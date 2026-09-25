@@ -7,13 +7,12 @@ import firstAidImg from '../assets/images/first-aid.jpg';
 import solarImg from '../assets/images/solar-panel-installation.jpg';
 import waterRepairImg from '../assets/images/water-repair-maintenance.jpg';
 import waterStorageImg from '../assets/images/water-storage-device.jpg';
-import avatarMakerImg from '../assets/images/avatar_community_maker_1790249223451.jpg';
 
 export const CURRENT_USER: UserProfile = {
   id: 'user_maya',
-  name: 'Maya Chen',
-  handle: '@mayamakes',
-  avatarUrl: avatarMakerImg,
+  name: 'User',
+  handle: '@user',
+  avatarUrl: '',
   location: 'Mission District, San Francisco',
   distanceMiles: 0,
   bio: 'Community organizer and practical skills volunteer. Passionate about clean water, food security, and sustainable local skill exchanges.',
@@ -39,9 +38,9 @@ export const CURRENT_USER: UserProfile = {
 export const OTHER_USERS: Record<string, UserProfile> = {
   user_carlos: {
     id: 'user_carlos',
-    name: 'Carlos Mendez',
-    handle: '@carlos_woodcraft',
-    avatarUrl: woodworkImg,
+    name: 'User',
+    handle: '@user',
+    avatarUrl: '',
     location: 'Mission District · 0.6 km away',
     distanceMiles: 0.4,
     bio: 'Community repair worker who keeps household tools and transport running. Looking to learn safe water-pump maintenance and solar basics.',
@@ -65,9 +64,9 @@ export const OTHER_USERS: Record<string, UserProfile> = {
   },
   user_elena: {
     id: 'user_elena',
-    name: 'Elena Rostova',
-    handle: '@elena_botanics',
-    avatarUrl: gardenImg,
+    name: 'User',
+    handle: '@user',
+    avatarUrl: '',
     location: 'Potrero Hill · 1.3 km away',
     distanceMiles: 0.8,
     bio: 'Smallholder farmer and community garden volunteer. I help neighbors improve harvests through healthy soil, water-wise growing, and practical food production.',
@@ -91,9 +90,9 @@ export const OTHER_USERS: Record<string, UserProfile> = {
   },
   user_david: {
     id: 'user_david',
-    name: 'David Kim',
-    handle: '@david_gears',
-    avatarUrl: solarImg,
+    name: 'User',
+    handle: '@user',
+    avatarUrl: '',
     location: 'Bernal Heights · 1.9 km away',
     distanceMiles: 1.2,
     bio: 'Community baker and food skills volunteer. Happy to teach affordable bread making and food preparation in exchange for health, water, or farming skills.',
@@ -117,9 +116,9 @@ export const OTHER_USERS: Record<string, UserProfile> = {
   },
   user_priya: {
     id: 'user_priya',
-    name: 'Priya Sharma',
-    handle: '@priyacooks',
-    avatarUrl: avatarMakerImg,
+    name: 'User',
+    handle: '@user',
+    avatarUrl: '',
     location: 'Noe Valley · 2.7 km away',
     distanceMiles: 1.7,
     bio: 'Community health volunteer and trainer. I teach practical first aid, hygiene, and prevention skills that families can use every day.',
@@ -252,8 +251,8 @@ export const INITIAL_REVIEWS: ReviewItem[] = [
   {
     id: 'rev_1',
     reviewerId: 'user_priya',
-    reviewerName: 'Priya Sharma',
-    reviewerAvatar: avatarMakerImg,
+    reviewerName: 'User',
+    reviewerAvatar: '',
     rating: 5,
     comment: 'Maya helped me revitalize my apartment balcony with organic herbs! She brought her own soil mix and seedling starter kit. Truly what neighborly community is all about.',
     skillName: 'Crop Rotation & Soil Health',
@@ -262,8 +261,8 @@ export const INITIAL_REVIEWS: ReviewItem[] = [
   {
     id: 'rev_2',
     reviewerId: 'user_david',
-    reviewerName: 'David Kim',
-    reviewerAvatar: solarImg,
+    reviewerName: 'User',
+    reviewerAvatar: '',
     rating: 5,
     comment: 'Maya made solar panel setup feel simple and safe. We connected the charge controller, tested the battery, and now I can keep essential lights powered.',
     skillName: 'Small Solar Panel Installation',
@@ -272,8 +271,8 @@ export const INITIAL_REVIEWS: ReviewItem[] = [
   {
     id: 'rev_3',
     reviewerId: 'user_carlos',
-    reviewerName: 'Carlos Mendez',
-    reviewerAvatar: woodworkImg,
+    reviewerName: 'User',
+    reviewerAvatar: '',
     rating: 5,
     comment: 'Great communication and prompt swap. Maya taught me the basic chords on my acoustic guitar that I had sitting in the closet for 3 years.',
     skillName: 'Basic First Aid Training',
@@ -358,7 +357,7 @@ export const INITIAL_THREADS: RequestThread[] = [
       {
         id: 'dm1',
         senderId: 'system',
-        text: 'Skill exchange completed: 1.5 Time Credits were deposited into David Kim’s balance.',
+        text: 'Skill exchange completed: 1.5 Time Credits were deposited into User’s balance.',
         timestamp: 'Sep 18 6:00 PM',
         isSystem: true
       }

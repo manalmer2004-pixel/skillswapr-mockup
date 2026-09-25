@@ -105,7 +105,7 @@ export default function App() {
         id: listing.userId,
         name: 'Community Neighbor',
         handle: '@neighbor',
-        avatarUrl: listing.imageUrl,
+        avatarUrl: '',
         location: listing.locationArea,
         distanceMiles: listing.distanceMiles,
         bio: 'Community member',
@@ -516,9 +516,6 @@ export default function App() {
               />
             </AndroidFrame>
 
-            <p className="text-[11px] text-stone-500 mt-4 text-center">
-              Google Pixel 8 / 9 chassis · Fully clickable wireframe · Tapping avatars opens profiles
-            </p>
           </div>
         )}
       </main>

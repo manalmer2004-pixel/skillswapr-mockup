@@ -51,8 +51,8 @@ export const ListingDetailScreen: React.FC<ListingDetailScreenProps> = ({
     totalHoursEarned: 16.0,
     totalHoursSpent: 11.0,
     joinedDate: 'Member since Jan 2024',
-    skillsOffered: ['Wood Joinery', 'Furniture Restoration'],
-    skillsWanted: ['Spanish Lessons', 'Web Help'],
+    skillsOffered: ['Water Filter Maintenance', 'Community Baking & Bread Basics'],
+    skillsWanted: ['Basic First Aid Training', 'Small Solar Panel Installation'],
     badges: ['Verified Neighbor', 'Master Craftsman']
   };
 

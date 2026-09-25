@@ -33,14 +33,12 @@ export const BrowseScreen: React.FC<BrowseScreenProps> = ({
 
   const categories = [
     'All',
-    'Home & DIY',
-    'Garden & Outdoor',
-    'Cooking & Baking',
-    'Languages',
-    'Tech & Digital',
-    'Arts & Crafts',
-    'Music & Audio',
-    'Wellness & Fitness'
+    'Water & Sanitation',
+    'Health',
+    'Solar & Energy',
+    'Farming',
+    'Mechanical',
+    'Cooking & Baking'
   ];
 
   const filtered = listings.filter((item) => {

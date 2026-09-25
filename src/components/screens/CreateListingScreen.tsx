@@ -24,7 +24,7 @@ export const CreateListingScreen: React.FC<CreateListingScreenProps> = ({
 }) => {
   const [listingType, setListingType] = useState<'offer' | 'request'>('offer');
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState<SkillCategory>('Home & DIY');
+  const [category, setCategory] = useState<SkillCategory>('Water & Sanitation');
   const [description, setDescription] = useState('');
   const [hours, setHours] = useState<number>(1.5);
   const [toolsInput, setToolsInput] = useState('Safety gear, Hand tools');
@@ -33,14 +33,12 @@ export const CreateListingScreen: React.FC<CreateListingScreenProps> = ({
   const [errors, setErrors] = useState<string | null>(null);
 
   const categories: SkillCategory[] = [
-    'Home & DIY',
-    'Garden & Outdoor',
-    'Cooking & Baking',
-    'Languages',
-    'Tech & Digital',
-    'Arts & Crafts',
-    'Music & Audio',
-    'Wellness & Fitness'
+    'Water & Sanitation',
+    'Health',
+    'Solar & Energy',
+    'Farming',
+    'Mechanical',
+    'Cooking & Baking'
   ];
 
   const handleSubmit = (e: React.FormEvent) => {

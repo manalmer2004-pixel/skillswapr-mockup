@@ -22,22 +22,20 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
   const [name, setName] = useState('Maya Chen');
   const [location, setLocation] = useState('Mission District, San Francisco');
   const [showLocationDialog, setShowLocationDialog] = useState(false);
-  const [firstSkill, setFirstSkill] = useState('Urban Container Gardening & Soil Prep');
-  const [category, setCategory] = useState<SkillCategory>('Garden & Outdoor');
+  const [firstSkill, setFirstSkill] = useState('Basic First Aid Training');
+  const [category, setCategory] = useState<SkillCategory>('Health');
   const [skillDesc, setSkillDesc] = useState(
-    'I can help you build raised garden planters, mix organic potting compost, and start seedlings!'
+    'I can teach practical first aid, wound care, emergency response, and basic health and hygiene practices.'
   );
   const [step, setStep] = useState<1 | 2>(1);
 
   const categories: SkillCategory[] = [
-    'Home & DIY',
-    'Garden & Outdoor',
-    'Cooking & Baking',
-    'Languages',
-    'Tech & Digital',
-    'Arts & Crafts',
-    'Music & Audio',
-    'Wellness & Fitness'
+    'Water & Sanitation',
+    'Health',
+    'Solar & Energy',
+    'Farming',
+    'Mechanical',
+    'Cooking & Baking'
   ];
 
   const handleGrantLocation = (precision: 'approximate' | 'precise') => {
@@ -162,7 +160,7 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
               What skill can you offer?
             </h2>
             <p className="text-xs text-stone-600 mt-1 mb-5">
-              It doesn't have to be professional! Gardening, fixing a zipper, teaching guitar chords, or walking someone's dog.
+              It doesn't have to be professional! First aid, water storage, farming, solar setup, and transport repair all help strengthen a community.
             </p>
 
             <form onSubmit={handleComplete} className="space-y-4">
@@ -192,7 +190,7 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
                   required
                   value={firstSkill}
                   onChange={(e) => setFirstSkill(e.target.value)}
-                  placeholder="e.g. Sourdough Starter & Bread Basics"
+                  placeholder="e.g. Water Filter Maintenance"
                   className="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-xs text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-700"
                 />
               </div>

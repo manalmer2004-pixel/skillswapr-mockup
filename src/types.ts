@@ -11,14 +11,12 @@ export type ScreenId =
   | 'create_listing';
 
 export type SkillCategory =
-  | 'Home & DIY'
-  | 'Garden & Outdoor'
-  | 'Cooking & Baking'
-  | 'Languages'
-  | 'Tech & Digital'
-  | 'Arts & Crafts'
-  | 'Music & Audio'
-  | 'Wellness & Fitness';
+  | 'Water & Sanitation'
+  | 'Health'
+  | 'Solar & Energy'
+  | 'Farming'
+  | 'Mechanical'
+  | 'Cooking & Baking';
 
 export interface UserProfile {
   id: string;

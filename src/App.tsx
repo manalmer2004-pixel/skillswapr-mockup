@@ -314,7 +314,7 @@ export default function App() {
       userId: currentUser.id,
       type: newListingData.type || 'offer',
       title: newListingData.title || 'New Community Skill',
-      category: newListingData.category || 'Home & DIY',
+      category: newListingData.category || 'Water & Sanitation',
       description: newListingData.description || '',
       imageUrl: newListingData.imageUrl || currentUser.avatarUrl,
       estimatedHours: newListingData.estimatedHours || 1,

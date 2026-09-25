@@ -1,7 +1,12 @@
 import { UserProfile, SkillListing, ReviewItem, RequestThread } from '../types';
 import woodworkImg from '../assets/images/hero_skill_woodwork_1790249188536.jpg';
 import gardenImg from '../assets/images/hero_skill_gardening_1790249201218.jpg';
-import bakingImg from '../assets/images/hero_skill_baking_1790249212345.jpg';
+import bakingImg from '../assets/images/baking.jpg';
+import cropSoilImg from '../assets/images/crop-and-soil-health.jpg';
+import firstAidImg from '../assets/images/first-aid.jpg';
+import solarImg from '../assets/images/solar-panel-installation.jpg';
+import waterRepairImg from '../assets/images/water-repair-maintenance.jpg';
+import waterStorageImg from '../assets/images/water-storage-device.jpg';
 import avatarMakerImg from '../assets/images/avatar_community_maker_1790249223451.jpg';
 
 export const CURRENT_USER: UserProfile = {
@@ -11,7 +16,7 @@ export const CURRENT_USER: UserProfile = {
   avatarUrl: avatarMakerImg,
   location: 'Mission District, San Francisco',
   distanceMiles: 0,
-  bio: 'Urban gardener, amateur sourdough baker, and community advocate. Passionate about mutual aid and sustainable local skill exchanges.',
+  bio: 'Community organizer and practical skills volunteer. Passionate about clean water, food security, and sustainable local skill exchanges.',
   rating: 4.9,
   reviewCount: 18,
   timeCreditBalance: 3.5, // 3.5 credits = 3.5 hours
@@ -19,14 +24,14 @@ export const CURRENT_USER: UserProfile = {
   totalHoursSpent: 4.5,
   joinedDate: 'Member since Apr 2024',
   skillsOffered: [
-    'Urban Container Gardening & Soil Prep',
-    'Sourdough Starter & Bread Basics',
-    'Beginner Mandolin & Acoustic Folk Chords'
+    'Crop Rotation & Soil Health',
+    'Basic First Aid Training',
+    'Small Solar Panel Installation'
   ],
   skillsWanted: [
-    'Bicycle Tune-up & Derailleur Adjustment',
-    'Conversational Spanish (Intermediate)',
-    'Simple Shelving Installation'
+    'Water Filter Maintenance',
+    'Community Baking & Bread Basics',
+    'Rainwater Collection Setup'
   ],
   badges: ['Neighborhood Anchor', '10+ Hours Exchanged', 'Top Rated']
 };
@@ -39,7 +44,7 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     avatarUrl: woodworkImg,
     location: 'Mission District · 0.6 km away',
     distanceMiles: 0.4,
-    bio: 'Local carpenter with 12 years in bespoke furniture and wood joinery. Looking to learn conversational Spanish fluency and need help setting up a portfolio site.',
+    bio: 'Community repair worker who keeps household tools and transport running. Looking to learn safe water-pump maintenance and solar basics.',
     rating: 4.95,
     reviewCount: 29,
     timeCreditBalance: 5.0,
@@ -47,14 +52,14 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     totalHoursSpent: 11.0,
     joinedDate: 'Member since Jan 2024',
     skillsOffered: [
-      'Custom Floating Shelves Installation',
-      'Solid Wood Restoration & Sanding',
-      'Power Tool Safety & Basic Joinery'
+      'Water Filter Maintenance',
+      'Community Baking & Bread Basics',
+      'Small Solar Panel Installation'
     ],
     skillsWanted: [
-      'Spanish Conversation Practice',
-      'Website Setup & Domain Linking',
-      'Indoor Houseplant Repotting'
+      'Basic First Aid Training',
+      'Crop Rotation & Soil Health',
+      'Water Filter Maintenance'
     ],
     badges: ['Master Craftsman', 'Fast Responder', 'Founding Member']
   },
@@ -65,7 +70,7 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     avatarUrl: gardenImg,
     location: 'Potrero Hill · 1.3 km away',
     distanceMiles: 0.8,
-    bio: 'Landscape designer & community garden volunteer. I love helping neighbors turn barren fire escapes or backyards into pollinator-friendly vegetable havens.',
+    bio: 'Smallholder farmer and community garden volunteer. I help neighbors improve harvests through healthy soil, water-wise growing, and practical food production.',
     rating: 4.88,
     reviewCount: 22,
     timeCreditBalance: 4.0,
@@ -73,14 +78,14 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     totalHoursSpent: 8.0,
     joinedDate: 'Member since Mar 2024',
     skillsOffered: [
-      'Raised Garden Bed Layout & Drip Line',
-      'Composting & Micro-green Cultivation',
-      'Fruit Tree Pruning'
+      'Crop Rotation & Soil Health',
+      'Composting & Natural Fertilizer',
+      'Water-Saving Irrigation'
     ],
     skillsWanted: [
-      'Carpentry / Cold-frame Building',
-      'Ceramic Planter Glazing',
-      'Bicycle Pannier Rack Mount'
+      'Water Filter Maintenance',
+      'Basic First Aid Training',
+      'Solar Battery Maintenance'
     ],
     badges: ['Green Thumb', 'Neighborhood Anchor']
   },
@@ -88,10 +93,10 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     id: 'user_david',
     name: 'David Kim',
     handle: '@david_gears',
-    avatarUrl: bakingImg,
+    avatarUrl: solarImg,
     location: 'Bernal Heights · 1.9 km away',
     distanceMiles: 1.2,
-    bio: 'Avid cyclist and volunteer bike cooperative mechanic. Happy to do complete brake, shifter, and chain overhauls in exchange for cooking or language lessons.',
+    bio: 'Community baker and food skills volunteer. Happy to teach affordable bread making and food preparation in exchange for health, water, or farming skills.',
     rating: 5.0,
     reviewCount: 14,
     timeCreditBalance: 2.0,
@@ -99,14 +104,14 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     totalHoursSpent: 7.0,
     joinedDate: 'Member since Feb 2024',
     skillsOffered: [
-      'Bicycle Full Tune-up & Safety Check',
-      'Brake Cable & Derailleur Indexing',
-      'Home WiFi & Mesh Network Setup'
+      'Community Baking & Bread Basics',
+      'Affordable Flatbread Making',
+      'Food Preservation Basics'
     ],
     skillsWanted: [
-      'Sourdough Baking Lessons',
-      'Gentle Vinyasa Yoga Coaching',
-      'Knife Sharpening'
+      'Small Solar Panel Installation',
+      'Water Filter Maintenance',
+      'Crop Rotation & Soil Health'
     ],
     badges: ['Community Fixer', '5-Star Streak']
   },
@@ -117,7 +122,7 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     avatarUrl: avatarMakerImg,
     location: 'Noe Valley · 2.7 km away',
     distanceMiles: 1.7,
-    bio: 'Home chef & polyglot. I teach regional North Indian cooking, spice blending, and conversational Spanish from 4 years living in Oaxaca.',
+    bio: 'Community health volunteer and trainer. I teach practical first aid, hygiene, and prevention skills that families can use every day.',
     rating: 4.92,
     reviewCount: 31,
     timeCreditBalance: 6.5,
@@ -125,14 +130,14 @@ export const OTHER_USERS: Record<string, UserProfile> = {
     totalHoursSpent: 17.5,
     joinedDate: 'Member since Oct 2023',
     skillsOffered: [
-      'Conversational Spanish Immersion',
-      'Traditional Dahl & Roti from Scratch',
-      'Ayurvedic Herbal Tea Blends'
+      'Basic First Aid Training',
+      'Community Hygiene & Safe Water',
+      'Nutrition for Families'
     ],
     skillsWanted: [
-      'Drywall Patching & Painting',
-      'Acoustic Guitar Strumming Basics',
-      'Pet Sitting (friendly senior lab)'
+      'Community Baking & Bread Basics',
+      'Small Solar Panel Installation',
+      'Crop Rotation & Soil Health'
     ],
     badges: ['Top Mentor', 'Super Swapper']
   }
@@ -143,16 +148,16 @@ export const INITIAL_LISTINGS: SkillListing[] = [
     id: 'listing_wood_shelves',
     userId: 'user_carlos',
     type: 'offer',
-    title: 'Custom Floating Shelf Build & Wall Stud Mounting',
-    category: 'Home & DIY',
-    description: 'I will bring my stud finder, level, drill press, and heavy-duty hardware to measure, cut, and mount sturdy solid wood floating shelves in your living room or kitchen. 1 hour of my time equals 1 time credit. You provide the raw lumber or shelf boards.',
-    imageUrl: woodworkImg,
+    title: 'Water Filter Maintenance',
+    category: 'Water & Sanitation',
+    description: 'I can show you how to clean, maintain, and replace basic parts in household water filters so drinking water stays safer. Bring your filter housing or tell me what problem you are seeing.',
+    imageUrl: waterRepairImg,
     estimatedHours: 2,
     creditCost: 2,
     locationArea: 'Mission District',
     distanceMiles: 0.4,
     availability: 'Sat & Sun mornings, Tue evenings',
-    toolsProvided: ['DeWalt 20V Drill', 'Magnetic Stud Finder', 'Heavy Toggle Anchors', 'Laser Level'],
+    toolsProvided: ['Clean Containers', 'Replacement Filter Media', 'Brushes', 'Basic Hand Tools'],
     createdAt: '2 hrs ago',
     saved: false
   },
@@ -160,16 +165,16 @@ export const INITIAL_LISTINGS: SkillListing[] = [
     id: 'listing_garden_setup',
     userId: 'user_elena',
     type: 'offer',
-    title: 'Raised Garden Bed Setup & Soil Conditioning',
-    category: 'Garden & Outdoor',
-    description: 'Planning your spring vegetable patch? I will come over with soil testing kits, organic amendments, and seedling trays to plan crop rotation and install companion plants that naturally ward off pests.',
-    imageUrl: gardenImg,
+    title: 'Crop Rotation & Soil Health',
+    category: 'Farming',
+    description: 'Learn how to rotate crops, protect soil nutrients, make compost, and plan planting seasons for healthier harvests with fewer costly inputs.',
+    imageUrl: cropSoilImg,
     estimatedHours: 2,
     creditCost: 2,
     locationArea: 'Potrero Hill',
     distanceMiles: 0.8,
     availability: 'Weekends, Friday afternoons',
-    toolsProvided: ['pH Soil Tester', 'Hand Trowels', 'Seedling Trays', 'Organic Compost Blend'],
+    toolsProvided: ['Soil Jar Test', 'Hand Hoe', 'Compost Samples', 'Planting Calendar'],
     createdAt: '5 hrs ago',
     saved: true
   },
@@ -177,33 +182,33 @@ export const INITIAL_LISTINGS: SkillListing[] = [
     id: 'listing_bike_tuneup',
     userId: 'user_david',
     type: 'offer',
-    title: 'Bicycle Full Safety Tune-Up & Shifter Alignment',
-    category: 'Home & DIY',
-    description: 'Bring your commuter bike or road bike over! I will true the wheels, de-grease and lube the drivetrain, replace frayed cables, and adjust brake pads so you ride safely and quietly.',
-    imageUrl: woodworkImg,
+    title: 'Community Baking & Bread Basics',
+    category: 'Cooking & Baking',
+    description: 'Learn affordable bread and flatbread basics using simple ingredients, local cooking methods, and practical ways to make food go further for your family.',
+    imageUrl: bakingImg,
     estimatedHours: 1.5,
     creditCost: 1.5,
     locationArea: 'Bernal Heights',
     distanceMiles: 1.2,
     availability: 'Weekday evenings (5–8pm)',
-    toolsProvided: ['Park Tool Stand', 'Torque Wrench', 'Cable Cutters', 'Chain Wear Indicator'],
+    toolsProvided: ['Wrench Set', 'Tire Levers', 'Patch Kit', 'Chain Lubricant'],
     createdAt: 'Yesterday',
     saved: false
   },
   {
-    id: 'listing_sourdough_bake',
+    id: 'listing_solar_installation',
     userId: 'user_maya',
     type: 'offer',
-    title: 'Sourdough 101: Wild Yeast Fermentation & Scoring',
-    category: 'Cooking & Baking',
-    description: 'Learn the ancient art of sourdough baking. I will give you a jar of my active 5-year sourdough starter, teach you autolyse, stretch-and-fold techniques, and Dutch oven baking secrets.',
-    imageUrl: bakingImg,
+    title: 'Small Solar Panel Installation',
+    category: 'Solar & Energy',
+    description: 'I can help you position a small solar panel, connect a charge controller safely, and set up basic battery storage for lights or phone charging.',
+    imageUrl: solarImg,
     estimatedHours: 2,
     creditCost: 2,
     locationArea: 'Mission District',
     distanceMiles: 0.2,
     availability: 'Saturday mornings (10am–12pm)',
-    toolsProvided: ['Active Starter Jar', 'Proofing Banneton', 'Baker’s Lame Razor', 'Organic Rye Flour'],
+    toolsProvided: ['Wire Strippers', 'Multimeter', 'Mounting Brackets', 'Safety Gloves'],
     createdAt: '2 days ago',
     saved: false
   },
@@ -211,16 +216,16 @@ export const INITIAL_LISTINGS: SkillListing[] = [
     id: 'listing_spanish_chat',
     userId: 'user_priya',
     type: 'offer',
-    title: 'Conversational Spanish Coffee Walks & Accent Coaching',
-    category: 'Languages',
-    description: 'Tired of robotic language apps? Practice natural conversational Spanish over coffee or a walk in Dolores Park. Ideal for intermediate learners who want to break through hesitation.',
-    imageUrl: avatarMakerImg,
+    title: 'Basic First Aid Training',
+    category: 'Health',
+    description: 'Practice practical first aid for cuts, burns, sprains, fainting, and other common emergencies. We will also cover when to seek professional medical help.',
+    imageUrl: firstAidImg,
     estimatedHours: 1,
     creditCost: 1,
     locationArea: 'Noe Valley',
     distanceMiles: 1.7,
     availability: 'Flexible weekday lunchtimes & weekends',
-    toolsProvided: ['Vocabulary Cheat Sheets', 'Idiom Cards', 'Recommended Reading list'],
+    toolsProvided: ['First Aid Kit', 'Clean Bandages', 'Soap', 'Training Cards'],
     createdAt: '3 days ago',
     saved: true
   },
@@ -228,16 +233,16 @@ export const INITIAL_LISTINGS: SkillListing[] = [
     id: 'listing_req_tax',
     userId: 'user_carlos',
     type: 'request',
-    title: 'Seeking: Basic Self-Employed Tax & Receipt Organization',
-    category: 'Tech & Digital',
-    description: 'Looking for someone comfortable with spreadsheets or QuickBooks to help me categorize 2023–2024 craft business receipts before quarterly tax deadlines. Happy to exchange 3 hours of woodshop labor or credits!',
-    imageUrl: woodworkImg,
+    title: 'Seeking: Clean Water Storage Advice',
+    category: 'Water & Sanitation',
+    description: 'Looking for help choosing, cleaning, and covering household water containers to keep drinking water safe. Happy to exchange repair time or credits.',
+    imageUrl: waterStorageImg,
     estimatedHours: 3,
     creditCost: 3,
     locationArea: 'Mission District',
     distanceMiles: 0.4,
     availability: 'Any evening this week',
-    toolsProvided: ['All Receipts Boxed', 'Laptop Ready', 'Fresh Coffee'],
+    toolsProvided: ['Covered Containers', 'Soap', 'Water Treatment Notes', 'Notebook'],
     createdAt: '4 days ago',
     saved: false
   }
@@ -251,17 +256,17 @@ export const INITIAL_REVIEWS: ReviewItem[] = [
     reviewerAvatar: avatarMakerImg,
     rating: 5,
     comment: 'Maya helped me revitalize my apartment balcony with organic herbs! She brought her own soil mix and seedling starter kit. Truly what neighborly community is all about.',
-    skillName: 'Urban Container Gardening',
+    skillName: 'Crop Rotation & Soil Health',
     date: '3 days ago'
   },
   {
     id: 'rev_2',
     reviewerId: 'user_david',
     reviewerName: 'David Kim',
-    reviewerAvatar: bakingImg,
+    reviewerAvatar: solarImg,
     rating: 5,
-    comment: 'The sourdough starter Maya gave me is bubbling vigorously and the Dutch oven baking technique was so easy to follow. Earned 2 credits well spent!',
-    skillName: 'Sourdough 101 Lessons',
+    comment: 'Maya made solar panel setup feel simple and safe. We connected the charge controller, tested the battery, and now I can keep essential lights powered.',
+    skillName: 'Small Solar Panel Installation',
     date: '1 week ago'
   },
   {
@@ -271,7 +276,7 @@ export const INITIAL_REVIEWS: ReviewItem[] = [
     reviewerAvatar: woodworkImg,
     rating: 5,
     comment: 'Great communication and prompt swap. Maya taught me the basic chords on my acoustic guitar that I had sitting in the closet for 3 years.',
-    skillName: 'Beginner Acoustic Guitar Chords',
+    skillName: 'Basic First Aid Training',
     date: '2 weeks ago'
   }
 ];
@@ -281,7 +286,7 @@ export const INITIAL_THREADS: RequestThread[] = [
     id: 'thread_carlos_shelves',
     listingId: 'listing_wood_shelves',
     listingTitle: 'Custom Floating Shelf Build & Wall Mounting',
-    listingCategory: 'Home & DIY',
+    listingCategory: 'Water & Sanitation',
     otherUser: OTHER_USERS['user_carlos'],
     status: 'pending',
     creditsProposed: 2,
@@ -313,13 +318,13 @@ export const INITIAL_THREADS: RequestThread[] = [
   {
     id: 'thread_elena_garden',
     listingId: 'listing_garden_setup',
-    listingTitle: 'Raised Garden Bed Setup & Soil Conditioning',
-    listingCategory: 'Garden & Outdoor',
+    listingTitle: 'Crop Rotation & Soil Health',
+    listingCategory: 'Farming',
     otherUser: OTHER_USERS['user_elena'],
     status: 'accepted',
     creditsProposed: 2,
     proposedDate: 'Sunday, 2:00 PM',
-    lastMessage: 'Sounds good! See you on Sunday at 2pm. I’ll bring the compost amendment.',
+    lastMessage: 'Sounds good! See you on Sunday at 2pm. I’ll bring the soil notes and planting calendar.',
     lastMessageTime: 'Yesterday',
     unreadCount: 0,
     messages: [
@@ -332,7 +337,7 @@ export const INITIAL_THREADS: RequestThread[] = [
       {
         id: 'em2',
         senderId: 'user_elena',
-        text: 'Sounds good! See you on Sunday at 2pm. I’ll bring the compost amendment.',
+        text: 'Sounds good! See you on Sunday at 2pm. I’ll bring the soil notes and planting calendar.',
         timestamp: 'Yesterday 4:02 PM'
       }
     ]
@@ -341,12 +346,12 @@ export const INITIAL_THREADS: RequestThread[] = [
     id: 'thread_david_bike',
     listingId: 'listing_bike_tuneup',
     listingTitle: 'Bicycle Full Safety Tune-Up & Shifter Alignment',
-    listingCategory: 'Home & DIY',
+    listingCategory: 'Mechanical',
     otherUser: OTHER_USERS['user_david'],
     status: 'completed',
     creditsProposed: 1.5,
     proposedDate: 'Completed Sep 18',
-    lastMessage: 'Exchange completed! 1.5 Time Credits transferred. Thank you for the sourdough loaf!',
+    lastMessage: 'Exchange completed! 1.5 Time Credits transferred. Thank you for helping with first aid training!',
     lastMessageTime: 'Sep 18',
     unreadCount: 0,
     messages: [

@@ -1,0 +1,6 @@
+{
+  "name": "skillswapr - Android MD3 UI Mockup",
+  "description": "Interactive Android Material Design 3 clickable wireframe and mockup for skillswapr, a community time-banking skill exchange app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

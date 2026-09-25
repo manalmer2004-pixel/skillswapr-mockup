@@ -208,7 +208,7 @@ fun HomeScreen(
                 title = {
                     Column {
                         Text("skillswapr", style = MaterialTheme.typography.titleLarge)
-                        Text("Mission District · 1.3 km radius", style = MaterialTheme.typography.bodySmall)
+                        Text("Nairobi, Kenya · 1.3 km radius", style = MaterialTheme.typography.bodySmall)
                     }
                 },
                 actions = {

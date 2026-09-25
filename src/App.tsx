@@ -319,7 +319,7 @@ export default function App() {
       imageUrl: newListingData.imageUrl || currentUser.avatarUrl,
       estimatedHours: newListingData.estimatedHours || 1,
       creditCost: newListingData.creditCost || 1,
-      locationArea: newListingData.locationArea || 'Mission District, SF',
+      locationArea: newListingData.locationArea || 'Nairobi, Kenya',
       distanceMiles: 0.1,
       availability: newListingData.availability || 'Flexible',
       toolsProvided: newListingData.toolsProvided || [],

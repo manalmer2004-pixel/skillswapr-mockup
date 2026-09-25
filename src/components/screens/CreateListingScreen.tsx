@@ -28,7 +28,7 @@ export const CreateListingScreen: React.FC<CreateListingScreenProps> = ({
   const [description, setDescription] = useState('');
   const [hours, setHours] = useState<number>(1.5);
   const [toolsInput, setToolsInput] = useState('Safety gear, Hand tools');
-  const [locationArea, setLocationArea] = useState('Mission District, SF');
+  const [locationArea, setLocationArea] = useState('Nairobi, Kenya');
   const [availability, setAvailability] = useState('Weekends & Evenings');
   const [errors, setErrors] = useState<string | null>(null);
 

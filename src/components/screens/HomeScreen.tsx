@@ -68,7 +68,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
               </div>
               <div className="flex items-center gap-1 text-[11px] text-stone-500 font-medium">
                 <MapPin className="w-3 h-3 text-emerald-800" />
-                <span>Mission District · {formatDistanceKm(distanceFilter)}</span>
+                <span>Nairobi, Kenya · {formatDistanceKm(distanceFilter)}</span>
               </div>
             </div>
           </div>

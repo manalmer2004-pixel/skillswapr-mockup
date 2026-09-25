@@ -63,7 +63,7 @@ export const BrowseScreen: React.FC<BrowseScreenProps> = ({
           <div>
             <h1 className="text-lg font-black text-stone-900 tracking-tight">Explore Skills</h1>
             <p className="text-[11px] text-stone-500 font-medium">
-              Time-banking exchange in San Francisco Bay
+              Time-banking exchange in Nairobi, Kenya
             </p>
           </div>
           <div className="flex items-center gap-1 bg-stone-200/80 p-0.5 rounded-xl">

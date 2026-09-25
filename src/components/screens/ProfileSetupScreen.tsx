@@ -19,7 +19,7 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
 }) => {
   const [photoSelected] = useState<string>('');
   const [name, setName] = useState('User');
-  const [location, setLocation] = useState('Mission District, San Francisco');
+  const [location, setLocation] = useState('Nairobi, Kenya');
   const [showLocationDialog, setShowLocationDialog] = useState(false);
   const [firstSkill, setFirstSkill] = useState('Basic First Aid Training');
   const [category, setCategory] = useState<SkillCategory>('Health');
@@ -39,7 +39,7 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
 
   const handleGrantLocation = (precision: 'approximate' | 'precise') => {
     setShowLocationDialog(false);
-    setLocation('Mission District, SF (Verified Local)');
+    setLocation('Nairobi, Kenya (Verified Local)');
   };
 
   const handleComplete = (e: React.FormEvent) => {
@@ -141,7 +141,7 @@ export const ProfileSetupScreen: React.FC<ProfileSetupScreenProps> = ({
                   type="text"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  placeholder="e.g. Mission District, SF"
+                  placeholder="e.g. Nairobi, Kenya"
                   className="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-white text-xs text-stone-900 focus:outline-none focus:ring-2 focus:ring-emerald-700"
                 />
                 <p className="text-[11px] text-stone-500 mt-1">
